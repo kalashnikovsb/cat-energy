@@ -1,0 +1,33 @@
+.main-header {
+  background: lightblue;
+  width: 320px;
+  margin: auto;
+}
+
+.main-header__inner {
+  background: lightgreen;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 11px;
+  padding-bottom: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-bottom: 1px solid #e6e6e6;
+}
+
+.main-header__logo-footer {
+  margin-top: 11px;
+  margin-right: 8px;
+}
+
+.main-header__burger {
+  width: 24px;
+  height: 18px;
+  background: url("../img/burger.svg") 50% 50% no-repeat;
+  border: none;
+  margin-top: 13px;
+}
+
+.main-header__nav {
+  display: none;
+}
