@@ -1,0 +1,30 @@
+.button {
+  width: 280px;
+  display: block;
+  box-sizing: border-box;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "Oswald", sans-serif;
+  color: $white-color;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  background: $green1-color;
+}
+
+
+
+// @media (min-width: 768px){
+//   .button {
+//     font-size: 20px;
+//     line-height: 20px;
+//     padding-top: 17px;
+//     padding-bottom: 17px;
+//   }
+
+//   .button--promo {
+//     width: 244px;
+//   }
+// }

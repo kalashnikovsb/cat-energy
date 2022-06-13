@@ -1,0 +1,68 @@
+.program {
+  padding-top: 30px;
+  padding-bottom: 18px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background: $gray3-color;
+}
+
+.program__title {
+  position: relative;
+  margin-top: 0;
+  margin-bottom: 30px;
+  padding-left: 72px;
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  line-height: 37px;
+  text-transform: uppercase;
+}
+
+.program__title--weight-loss::before {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 53px;
+  top: -9px;
+  left: 2px;
+  background: url("../img/weight-loss-image.svg") 50% 50% no-repeat;
+}
+
+.program__title--weight-gain::before {
+  content: "";
+  position: absolute;
+  width: 67px;
+  height: 50px;
+  top: -7px;
+  left: -7px;
+  background: url("../img/weight-gain-image.svg") 50% 50% no-repeat;
+}
+
+.program__text {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: $gray4-color;
+  position: relative;
+}
+
+.program__text:last-of-type {
+  padding-bottom: 22px;
+}
+
+.program__text:last-of-type::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: $gray2-color;
+}
+
+.program__link {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: $black-color;
+  text-transform: uppercase;
+  text-decoration: none;
+}
