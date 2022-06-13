@@ -1,30 +1,35 @@
 .promo {
   padding-top: 27px;
-  padding-bottom: 0;
   padding-left: 20px;
   padding-right: 20px;
   box-sizing: border-box;
   font-family: "Oswald", sans-serif;
   color: $white-color;
   background: linear-gradient(to bottom, $green2-color 0%, $green2-color 302px, $white-color 303px), url("../img/promo-background.png") 64% 0%;
+  display: grid;
+  grid-template-rows: auto auto auto auto;
 }
 
 .promo__title {
   margin-top: 0;
-  margin-bottom: 26px;
+  margin-bottom: 25px;
   font-size: 36px;
   line-height: 36px;
   font-weight: 400;
   text-align: center;
+
+  background: darkgreen;
 }
 
 .promo__text {
   margin-top: 0;
-  margin-bottom: 28px;
+  margin-bottom: 29px;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
   text-align: center;
+
+  background: darkgreen;
 }
 
 .promo__image {
@@ -34,59 +39,60 @@
   max-width: 100%;
   object-fit: contain;
   margin: 0 auto;
-  margin-bottom: 3px;
   background: red;
+  margin-bottom: 3px;
 }
 
 .promo__button {
   margin: auto;
+
+  background: darkorchid;
 }
 
+@media (min-width: 768px) {
+  .promo {
+    padding-top: 64px;
+    grid-template-rows: auto auto auto;
+  }
 
+  .promo__title {
+    font-size: 60px;
+    line-height: 60px;
+    color: $black-color;
+    text-align: left;
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    margin-left: 98px;
+    margin-right: 98px;
+    margin-bottom: 40px;
+  }
 
+  .promo__text {
+    font-size: 20px;
+    line-height: 20px;
+    color: $black-color;
+    text-align: left;
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+    margin-left: 98px;
+    margin-right: 98px;
+    margin-bottom: 20px;
+  }
 
-// @media (min-width: 768px){
-//   .promo {
-//     padding-top: 64px;
-//     display: flex;
-//     flex-direction: column;
-//     background: lightblue;
-//   }
+  .promo__image {
+    width: 709px;
+    height: 609px;
+    margin-bottom: 0;
+    grid-column: 1 / -1;
+    grid-row: 3 / 4;
+    z-index: 1;
+  }
 
-//   .promo__title {
-//     font-size: 60px;
-//     line-height: 60px;
-//     color: $black-color;
-//     text-align: left;
-//     order: 1;
-//     margin-left: 98px;
-//     margin-right: 98px;
-//     margin-bottom: 41px;
-//   }
-
-//   .promo__text {
-//     font-size: 20px;
-//     line-height: 20px;
-//     color: $black-color;
-//     text-align: left;
-//     order: 2;
-//     margin-left: 98px;
-//     margin-right: 98px;
-//     margin-bottom: 49px;
-//   }
-
-//   .promo__image {
-//     width: 709px;
-//     height: 609px;
-//     margin-bottom: 0;
-//     top: -83px;
-//     order: 4;
-//     z-index: 0;
-//   }
-
-//   .promo__button {
-//     order: 3;
-//     z-index: 2;
-//     margin-left: 92px;
-//   }
-// }
+  .promo__button {
+    margin-left: 92px;
+    margin-top: 30px;
+    grid-row: 3 / 4;
+    grid-column: 1 / -1;
+    z-index: 2;
+  }
+}

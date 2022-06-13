@@ -21,29 +21,27 @@
   margin-top: 10px;
 }
 
+@media (min-width: 768px) {
+  .main-header {
+    display: flex;
+    padding-top: 24px;
+    padding-bottom: 0;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: lightgreen;
+  }
 
+  .main-header__inner {
+    display: none;
+  }
 
-// @media (min-width: 768px){
-//   .main-header {
-//     display: flex;
-//     padding-top: 24px;
-//     padding-bottom: 0;
-//     padding-left: 30px;
-//     padding-right: 30px;
-//     background: lightgreen;
-//   }
+  .main-header__logo {
+    display: block;
+    background: lightblue;
+  }
 
-//   .main-header__inner {
-//     display: none;
-//   }
-
-//   .main-header__logo {
-//     display: block;
-//     background: lightblue;
-//   }
-
-//   .main-header__nav {
-//     margin-left: auto;
-//     margin-top: 9px;
-//   }
-// }
+  .main-header__nav {
+    margin-left: auto;
+    margin-top: 9px;
+  }
+}

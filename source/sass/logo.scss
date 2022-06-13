@@ -2,16 +2,12 @@
   display: none;
 }
 
+@media (min-width: 768px) {
+  .logo {
+    display: block;
+  }
 
-
-
-
-// @media (min-width: 768px){
-//   .logo {
-//     display: block;
-//   }
-
-//   .logo__image {
-//     display: block;
-//   }
-// }
+  .logo__image {
+    display: block;
+  }
+}

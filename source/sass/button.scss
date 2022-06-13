@@ -14,17 +14,15 @@
   background: $green1-color;
 }
 
+@media (min-width: 768px) {
+  .button {
+    font-size: 20px;
+    line-height: 20px;
+    padding-top: 17px;
+    padding-bottom: 17px;
+  }
 
-
-// @media (min-width: 768px){
-//   .button {
-//     font-size: 20px;
-//     line-height: 20px;
-//     padding-top: 17px;
-//     padding-bottom: 17px;
-//   }
-
-//   .button--promo {
-//     width: 244px;
-//   }
-// }
+  .button--promo {
+    width: 244px;
+  }
+}
