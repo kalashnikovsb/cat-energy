@@ -3,7 +3,7 @@
   padding-bottom: 0;
   padding-left: 20px;
   padding-right: 20px;
-  background: lime;
+  background: lightblue;
 }
 
 .features__title {
@@ -23,9 +23,60 @@
 
 .features__item {
   margin-bottom: 20px;
-  background: red;
 }
 
 .features__item:last-of-type {
   margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .features {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 46px;
+    padding-bottom: 46px;
+    border-bottom: 1px solid black;
+  }
+
+  .features__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 72px;
+  }
+
+  .features__list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    row-gap: 77px;
+    column-gap: 60px;
+  }
+
+  .features__item {
+    width: calc(50% - 30px);
+    margin-bottom: 0;
+  }
+
+  .features__item:nth-of-type(2n) {
+    margin-right: 0;
+  }
+}
+
+@media (min-width: 1440px) {
+  .features {
+    padding-top: 41px;
+    padding-bottom: 0;
+    padding-left: 110px;
+    padding-right: 110px;
+    border-bottom: 0;
+  }
+
+  .features__title {
+    margin-bottom: 72px;
+  }
+
+  .features__list {
+    row-gap: 0;
+    column-gap: 80px;
+  }
 }

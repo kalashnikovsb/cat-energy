@@ -64,3 +64,10 @@
     background: $green1-color;
   }
 }
+
+@media (min-width: 1440px) {
+  .main-nav__link {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

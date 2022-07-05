@@ -45,3 +45,16 @@
     margin-top: 9px;
   }
 }
+
+@media (min-width: 1440px) {
+  .main-header {
+    padding-top: 54px;
+    padding-left: 110px;
+    padding-right: 110px;
+  }
+
+  .main-header__nav {
+    margin-top: 0;
+    padding-top: 0;
+  }
+}

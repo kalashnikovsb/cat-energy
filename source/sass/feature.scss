@@ -1,36 +1,100 @@
 .feature {
   min-height: 60px;
-}
-
-.feature__text {
   position: relative;
-  margin-top: 0;
-  margin-bottom: 0;
   padding-left: 80px;
-  color: $gray4-color;
+  box-sizing: border-box;
 }
 
-.feature__text::before {
+.feature::before {
   content: "";
+  width: 60px;
+  height: 60px;
   position: absolute;
   top: -2px;
   left: 0;
-  width: 60px;
-  height: 60px;
 }
 
-.feature__text--composition::before {
-  background: url("../img/composition.svg") 50% 50% no-repeat;
+.feature--leaf::before {
+  background: url("../img/icon-leaf.svg") 50% 50% no-repeat $green1-color;
 }
 
-.feature__text--form-type::before {
-  background: url("../img/form-type.svg") 50% 50% no-repeat;
+.feature--tub::before {
+  background: url("../img/icon-tub.svg") 50% 50% no-repeat $green1-color;
 }
 
-.feature__text--meal::before {
-  background: url("../img/meal.svg") 50% 50% no-repeat;
+.feature--eat::before {
+  background: url("../img/icon-eat.svg") 50% 50% no-repeat $green1-color;
 }
 
-.feature__text--time::before {
-  background: url("../img/time.svg") 50% 50% no-repeat;
+.feature--alarm::before {
+  background: url("../img/icon-alarm.svg") 50% 50% no-repeat $green1-color;
+}
+
+.feature__text {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: $gray4-color;
+}
+
+
+@media (min-width: 768px) {
+  .feature {
+    padding-top: 111px;
+    padding-left: 0;
+    min-height: 240px;
+  }
+
+  .feature:nth-of-type(1) {
+    background: url("../img/digit-one.svg") 50% 0% no-repeat red;
+  }
+
+  .feature:nth-of-type(2) {
+    background: url("../img/digit-two.svg") 58% 0% no-repeat red;
+  }
+
+  .feature:nth-of-type(3) {
+    background: url("../img/digit-three.svg") 59% 0% no-repeat red;
+  }
+
+  .feature:nth-of-type(4) {
+    background: url("../img/digit-four.svg") 61% 0% no-repeat red;
+  }
+
+  .feature::before {
+    top: 0;
+    width: 80px;
+    height: 80px;
+  }
+
+  .feature__text {
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 20px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .feature {
+    width: 245px;
+  }
+
+  .feature:nth-of-type(1) {
+    background: url("../img/digit-one.svg") 73% 0% no-repeat red;
+  }
+
+  .feature:nth-of-type(2) {
+    background: url("../img/digit-two.svg") 92% 0% no-repeat red;
+  }
+
+  .feature:nth-of-type(3) {
+    background: url("../img/digit-three.svg") 93% 0% no-repeat red;
+  }
+
+  .feature:nth-of-type(4) {
+    background: url("../img/digit-four.svg") 100% 0% no-repeat red;
+  }
+
+  .feature__text {
+    padding-right: 0;
+  }
 }

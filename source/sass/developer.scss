@@ -19,3 +19,10 @@
   background: url("../img/htmlacademy.svg") 50% 50% no-repeat lightgreen;
   font-size: 0;
 }
+
+@media (min-width: 768px) {
+  .developer {
+    padding: 0;
+    column-gap: 25px;
+  }
+}

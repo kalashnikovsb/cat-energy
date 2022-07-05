@@ -2,6 +2,11 @@
   display: none;
 }
 
+.logo__image {
+  max-width: 100%;
+  object-fit: contain;
+}
+
 @media (min-width: 768px) {
   .logo {
     display: block;
@@ -9,5 +14,13 @@
 
   .logo__image {
     display: block;
+  }
+}
+
+@media (min-width: 1440px) {
+  .logo__image {
+    width: 202px;
+    height: 59px;
+    background: red;
   }
 }
